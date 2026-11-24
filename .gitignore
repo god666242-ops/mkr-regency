@@ -1,0 +1,5 @@
+node_modules
+.next
+.env*.local
+
+# originals are kept out of public/ so they are never served
