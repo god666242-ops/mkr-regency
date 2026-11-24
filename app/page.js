@@ -2,6 +2,7 @@ import { hotel as h, site as s } from "../site";
 import Widget from "../components/Widget";
 import Photo, { imgSrcSet, imgFallback } from "../components/Photo";
 import Faq from "../components/Faq";
+import Gallery from "../components/Gallery";
 
 const phone = h.phones[0];
 const left = [["Suites", "suites"], ["Amenities", "amenities"], ["Gallery", "gallery"]];
@@ -11,7 +12,6 @@ const nav = [...left, ...right];
 const WRAP = "mx-auto max-w-[1240px] px-6 py-20 md:px-10 md:py-28";
 const H2 = "font-fd text-[clamp(34px,4.6vw,58px)] font-light leading-[1.08] tracking-[-0.01em]";
 const LINK = "underline decoration-goldlt underline-offset-[6px]";
-const SPAN = { big: "col-span-2 row-span-2", wide: "col-span-2", tall: "row-span-2" };
 
 export default function Page() {
   return (
@@ -156,11 +156,7 @@ export default function Page() {
       {/* Gallery */}
       <section className={WRAP} id="gallery">
         <h2 className={`${H2} text-umber`}>A look inside</h2>
-        <div className="mt-12 grid auto-rows-[150px] grid-cols-2 gap-3 md:auto-rows-[190px] md:grid-cols-4 md:gap-4">
-          {s.gallery.map((g) => (
-            <Photo key={g.alt} src={g.src} alt={g.alt} sizes={g.span === "big" ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"} className={SPAN[g.span] || ""} />
-          ))}
-        </div>
+        <Gallery items={s.gallery} />
       </section>
 
       {/* Around */}

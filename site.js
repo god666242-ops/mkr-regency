@@ -33,13 +33,13 @@ export const site = {
   // img = main photo, more = two smaller photos shown under it (names from scripts/optimize-images.py)
   rooms: [
     { name: "A/C Premium Twin Room", bed: "Two single beds", desc: "A bright, quiet room with twin beds, cushioned headboards and a work desk, ideal for friends and colleagues travelling together.", perks: ["Air conditioning", "Free Wi-Fi", "Work desk", "Television"], img: "twin-1", pos: "center", more: [["twin-2", "Premium Twin Room, second view"], ["twin-3", "Desk and wardrobe in the Premium Twin Room"]] },
-    { name: "A/C Premium King Room", bed: "King bed", desc: "A generous king bed with a tufted headboard, warm lighting and a tidy dressing and work corner.", perks: ["Air conditioning", "Free Wi-Fi", "Mini fridge", "Attached bathroom"], img: "king-1", pos: "50% 58%", more: [["king-2", "Premium King Room, side view"], ["king-3", "Premium King Room bed"]] },
-    { name: "A/C Mini Suite", bed: "King bed and sofa", desc: "A king bed with its own seating area, a television wall and a mini fridge, for longer stays.", perks: ["Air conditioning", "Sofa seating area", "Television", "Mini fridge"], img: "mini-1", pos: "center", more: [["mini-2", "Mini Suite seating area"], ["mini-3", "Mini Suite bed"]] },
+    { name: "A/C Premium King Room", bed: "King bed", desc: "A generous king bed with a tufted headboard, warm lighting and a tidy dressing and work corner.", perks: ["Air conditioning", "Free Wi-Fi", "Mini fridge", "Attached bathroom"], img: "king-1", pos: "50% 58%", more: [["king-2", "Premium King Room, side view"], ["king-4", "Premium King Room bed with towel swan"]] },
+    { name: "A/C Mini Suite", bed: "King bed and sofa", desc: "A king bed with its own seating area, a television wall and a mini fridge, for longer stays.", perks: ["Air conditioning", "Sofa seating area", "Television", "Mini fridge"], img: "mini-1", pos: "50% 60%", more: [["mini-2", "Mini Suite bed"], ["mini-3", "Mini Suite seating area"]] },
     { name: "A/C Executive Suite", bed: "King bed and lounge", desc: "Our most spacious address: a king bed, a full lounge with two sofas and a marble-top table, and a lit dressing mirror.", perks: ["Air conditioning", "Lounge with two sofas", "Lit dressing mirror", "Free Wi-Fi"], img: "exec-1", pos: "50% 60%", more: [["exec-2", "Executive Suite lounge"], ["exec-3", "Executive Suite bed"]] },
   ],
   // TODO: keep only what the hotel really offers
   amenities: [
-    ["Complimentary breakfast", "Start the day at the hotel."],
+    ["Restaurant Service", "Start the day at the hotel."],
     ["Air-conditioned rooms", "Cool and quiet, day and night."],
     ["Free Wi-Fi", "In rooms and public areas."],
     ["24-hour front desk", "Arrive at any hour."],
@@ -51,18 +51,24 @@ export const site = {
   // Photos are names from scripts/optimize-images.py, e.g. "exec-2" -> /images/exec-2-*.webp
   heroImg: "exec-2",
   introImg: "detail-mirror",
+  // Gallery: cat = filter tab (Hotel / Rooms / Bathrooms), span = tile size (big, wide, tall or empty)
   gallery: [
-    { src: "exec-2", alt: "Executive Suite lounge", span: "big" },
-    { src: "detail-lounge", alt: "Suite seating and television", span: "" },
-    { src: "bath-1", alt: "Marble-look bathroom", span: "" },
-    { src: "twin-1", alt: "Premium Twin Room", span: "wide" },
-    { src: "detail-wardrobe", alt: "Wardrobe and mini fridge", span: "" },
-    { src: "bath-2", alt: "Guest bathroom", span: "tall" },
+    { src: "hotel-day", alt: "Hotel MKR Regency, front view", cat: "Hotel", span: "big" },
+    { src: "hotel-night", alt: "Hotel MKR Regency entrance at night", cat: "Hotel", span: "tall" },
+    { src: "exec-2", alt: "Executive Suite lounge", cat: "Rooms", span: "wide" },
+    { src: "king-4", alt: "Premium King Room", cat: "Rooms", span: "" },
+    { src: "mini-3", alt: "Mini Suite seating area", cat: "Rooms", span: "" },
+    { src: "twin-1", alt: "Premium Twin Room", cat: "Rooms", span: "wide" },
+    { src: "detail-lounge", alt: "Suite seating and television", cat: "Rooms", span: "" },
+    { src: "detail-wardrobe", alt: "Wardrobe and mini fridge", cat: "Rooms", span: "" },
+    { src: "bath-1", alt: "Marble-look bathroom", cat: "Bathrooms", span: "" },
+    { src: "bath-2", alt: "Guest bathroom", cat: "Bathrooms", span: "tall" },
   ],
+
   // Around the hotel: [place, distance]
   nearby: [
+    ["Manipal Hospital Vijayawada", "1 km"],
     ["Undavalli Caves", "1.5 km"],
-    ["Manipal Hospital Vijayawada", "2 km"],
     ["Vijaya Keeladri Temples", "2 km"],
     ["KL University", "3 km"],
     ["Prakasam Barrage", "3.5 km"],
@@ -80,6 +86,7 @@ export const site = {
     ["How do I book?", "Press Reserve your stay, choose your dates and complete the booking in the window that opens."],
     ["Where is the hotel?", "On the NH bypass, behind the SBI branch in Tadepalli, Andhra Pradesh 522501."],
     ["Can I book by phone?", "Yes. Call the front desk on 76194 97619."],
+    ["How long does it take to get from Hotel MKR Regency to Vijayawada International Airport?", "Approximate travel times from Hotel MKR Regency to Vijayawada International Airport (about 24 km): by car, around 40 minutes; by public transport, around 1 hr 25 mins."],
     ["Do I get the best rate by booking direct?", "Rates in the booking window are the hotel's own live rates."],
   ],
 };
