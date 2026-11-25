@@ -93,3 +93,6 @@ export const site = {
     ["Do I get the best rate by booking direct?", "Rates in the booking window are the hotel's own live rates."],
   ],
 };
+
+// Used by the Terms & Conditions and Privacy Policy pages (legal.js)
+export const policy = { checkIn: null, checkOut: null, googleFonts: false };
