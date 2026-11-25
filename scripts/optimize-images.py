@@ -9,6 +9,10 @@ import json, os
 SRC, OUT = "images-original", "public/images"
 WIDTHS = [480, 960, 1600]
 MAP = {  # new name : original file
+    "twin-main": "twin-new-main.jpeg",
+    "twin-bed-a": "twin-new-bed-a.jpeg",
+    "twin-bed-b": "twin-new-bed-b.jpeg",
+    "twin-wide": "twin-new-wide.jpeg",
     "twin-1": "IMG_20260510_202443.jpg.jpeg",
     "twin-2": "IMG_20260511_145048.jpg.jpeg",
     "twin-3": "IMG_20260510_201442.jpg.jpeg",
