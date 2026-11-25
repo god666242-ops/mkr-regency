@@ -1,7 +1,7 @@
 // Edit this file only. Everything on the page comes from here.
 // TODO = placeholder until the hotel confirms. Address, phone, rating and coordinates come from the hotel's Google listing: please confirm them.
 export const hotel = {
-  slug: "hotel-mkr-residency", // TODO: PureBook hotel slug (used by the booking button)
+  slug: "mkr-regency", // TODO: PureBook hotel slug (used by the booking button)
   name: "MKR Regency",
   full: "Hotel MKR Regency",
   locality: "Tadepalli",
